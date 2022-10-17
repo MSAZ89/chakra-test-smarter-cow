@@ -5,10 +5,10 @@ import {
     AccordionPanel,
     AccordionIcon,
     Box,
+    Button
   } from '@chakra-ui/react'
 
 import { useState } from 'react'
-
 
 export default function MyAccordion (){
 
@@ -16,7 +16,7 @@ const [disableNd, setDisableNd] = useState(false);
 
     return(
         <>
-            <button onClick={() => setDisableNd(!disableNd)}>toggle disabled</button>
+            <Button onClick={() => setDisableNd(!disableNd)}>toggle disabled</Button>
             <br/><br/>
             <Accordion defaultIndex={[0]} allowMultiple>
                 <AccordionItem isDisabled={disableNd}>
